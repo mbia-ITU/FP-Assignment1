@@ -25,3 +25,6 @@ let rec bin (n,k) = if n=k || k=0 then 1 else bin(n-1,k-1) + bin(n-1,k)
 
 //Exercise 1.8
 let timediff (h,m) (h2,m2) = (h2-h)*60+(m2-m)
+
+//Exercise 1.9
+let minutes (h,m) = timediff(0,0) (h,m)
