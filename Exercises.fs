@@ -18,7 +18,7 @@ let rec fib n =
 let dup (s: string) = s+s
 
 //Exercise 1.6
-let rec dupn s n = if n <> 0 then s+dupn (s) (i-1) else ""
+let rec dupn s n = if n <> 0 then s+dupn (s) (n-1) else ""
 
 //Exercise 1.7
 let rec bin (n,k) = if n<>k ||k<>0 then bin(n-1,k-1) + bin(n-1,k) else 1
